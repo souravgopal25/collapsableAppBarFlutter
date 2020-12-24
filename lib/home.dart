@@ -31,9 +31,8 @@ nested() {
       body: ListView.builder(
           itemCount: 5,
           itemBuilder: (context, index) {
-            return Text(
-              "Index $index",
-              style: TextStyle(fontSize: 30),
+            return ListTile(
+              title: Text("Index $index"),
             );
           }));
 }
